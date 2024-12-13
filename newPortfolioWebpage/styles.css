@@ -1,0 +1,188 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*Navbar styling*/
+#navbar-btn {
+  margin: 0;
+  position: fixed;
+  display: block;
+  top: 1px;
+  left: 1px;
+  background-color: black;
+  border: none;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 1.1em;
+}
+
+#header {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.navbar {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  position: fixed;
+  background-color: black;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.navbar a:hover {
+  color: grey;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+}
+.navbar li {
+  float: left;
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  padding: 0 1vh;
+}
+
+/*Welcome-section styling*/
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e96e62aa-16de-490d-8797-ec8d99edc46c/dga8tnf-c593dd0c-9df8-4f77-a60a-8af4ed614dd3.png/v1/fill/w_1280,h_732,q_80,strp/hacker_wallpaper_by_manthan003_dga8tnf-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzMyIiwicGF0aCI6IlwvZlwvZTk2ZTYyYWEtMTZkZS00OTBkLTg3OTctZWM4ZDk5ZWRjNDZjXC9kZ2E4dG5mLWM1OTNkZDBjLTlkZjgtNGY3Ny1hNjBhLThhZjRlZDYxNGRkMy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.H2PIKbV9UNiMoOQwM6fxbe1v7mXxk0n8_-M-uri7IPg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#welcome-section h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+#welcome-section p {
+  color: #1aff00;
+  background-color: rgba(0, 0, 0, 0.465);
+  font-size: 1.5rem;
+}
+
+/*#Project-section Styling*/
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0;
+}
+#project-section {
+  width: 100%;
+  height: 100%;
+}
+#project-section div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.penguin {
+  grid-area: 1 / 1 / 2/ 2;
+}
+.dragon-repeller-RPG {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.city-skyline {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.palindrome-checker {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.roman-numeral-converter {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.project-tile {
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsb2ZmaWNlN19taW5pbWFsX2lsbHVzdHJhdGlvbl9vZl9ibHVlX3RlY2hfaGV4YWdvbl9vbl9kYV85OGY3OTJkYy1jZmMyLTRjMjktYWViZi0yMWZkMjYwMTQyNjdfMS5qcGc.jpg);
+}
+.project-tile img {
+  width: 300px;
+  height: 300px;
+  border-radius: 25px 25px 0 0;
+  margin: 0;
+}
+.project-tile a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(0, 247, 255);
+}
+.project-tile p {
+  background-color: rgba(0, 0, 0, 0.78);
+  margin-top: -8px;
+  border-radius: 0 0 25px 25px;
+}
+.project-tile p:hover {
+  background-color: rgb(20, 20, 20);
+}
+/*Contact Section*/
+
+#contact-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  z-index: 9999;
+  background-color: black;
+  color: white;
+}
+.contact-box {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.contact-box h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.contact-box ul {
+  display: flex;
+  justify-content: space-around;
+}
+.contact-box ul li {
+  list-style: none;
+}
+.contact-box a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+.contact-box a:hover {
+  color: grey;
+}
